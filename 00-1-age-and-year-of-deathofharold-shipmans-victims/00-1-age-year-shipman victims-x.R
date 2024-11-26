@@ -14,6 +14,7 @@ ggplot(data = df,
   scale_y_continuous(breaks = seq(40, 90, 10),
                      limits = c(39, 95)) +
   scale_color_brewer(name = "Set1") +
+  theme_bw() +
   theme(legend.position.inside = c(0.125, 1.12),
         legend.background = element_rect(colour = "black"),
         legend.title = element_blank())
